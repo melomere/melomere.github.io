@@ -1,23 +1,97 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  <img src= "https://maxcdn1.laprogressive.com/wp-content/uploads/2013/05/george-washington-408.gif" />
-</div>
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel='stylesheet' href='style.css' />
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>Armando Pérez</h1>
+        </div>
+        <div class="pull-right">
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#">All</a></li>
+            <li><a href="#">Consumer</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Commerce</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="http://images.techtimes.com/data/images/full/10891/tour-the-worlds-largest-cruise-ship-via-google-street-view-maps.jpg">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="https://pbs.twimg.com/media/CbsnwS6WEAUYjhW.jpg">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="http://communityplates.org/wp-content/uploads/2014/04/arrow-down.jpg">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="http://img05.deviantart.net/069a/i/2015/119/d/7/erin_graffiti_name_by_girldoodle-d3lahlj.jpg">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="http://www.fansofflanders.be/~/media/Images/Blogs/5_January_2013/09012013_Amanda_Heggestad/BlogAH5_BLOG.ashx">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="https://assets.listia.com/photos/0b36575dec9d2cc89fe8/original.jpg?s=320x320m&sig=f6b3497942c31e36&ts=1330536111">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="http://i1067.photobucket.com/albums/u432/nicole_lewis5/6vGxrh1465068682_zpsgbdq40n2.png">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="http://lizart.be/wp-content/uploads/graffiti-muurschilderingen/muurschildering-grafitti-naam-david.jpg">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="thumbnail" href="#">
+            <img src="http://st.lowrider.com/uploads/sites/7/2013/10/1203-lrmp-01-o-1964-chevrolet-impala-SS-convertible-passenger-side-front-view.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul>
+            <li>A-a-ron</li>
+            <li>De-nice</li>
+            <li>Jean-Pierre</li>
+            <li>Lou-is</li>
+          </ul>
+        </div>
+        <div class="pull-right">
+          <p>© 2016</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
